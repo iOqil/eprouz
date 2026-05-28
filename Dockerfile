@@ -5,11 +5,14 @@ FROM node:22-alpine AS builder
 
 WORKDIR /app
 
+# Build deps for native modules (better-sqlite3 used by @nuxt/content)
+RUN apk add --no-cache python3 make g++ libc6-compat
+
 RUN npm install -g pnpm@10.16.1
 
-# Copy lockfiles first for layer caching
+# Copy lockfiles first for layer caching (lockfile may not exist yet)
 COPY package.json pnpm-lock.yaml* ./
-RUN pnpm install --frozen-lockfile || pnpm install
+RUN pnpm install --no-frozen-lockfile
 
 # Copy source
 COPY . .
