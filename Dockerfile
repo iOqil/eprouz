@@ -17,7 +17,8 @@ RUN pnpm install --no-frozen-lockfile
 # Copy source
 COPY . .
 
-# Build (Nuxt SSR/SSG)
+# Build (Nuxt SSR/SSG). Default Node heap (2GB) isn't enough for Nitro + content + i18n prerender.
+ENV NODE_OPTIONS="--max-old-space-size=4096"
 RUN pnpm build
 
 
