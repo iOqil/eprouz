@@ -1,0 +1,44 @@
+# Git
+.git
+.gitignore
+.gitattributes
+.github
+
+# Local env
+.env
+.env.*
+!.env.example
+
+# Dependencies (rebuilt in container)
+node_modules
+
+# Nuxt build outputs (rebuilt)
+.output
+.nuxt
+.nitro
+.cache
+dist
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Tests
+coverage/
+.nyc_output/
+
+# Markdown not needed in image
+README.md
+LICENSE
+*.md
+!content/**/*.md
+
+# Misc
+.fleet
+.eslintcache

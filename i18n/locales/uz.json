@@ -1,0 +1,314 @@
+{
+  "nav": {
+    "features": "Imkoniyatlar",
+    "pricing": "Tariflar",
+    "security": "Xavfsizlik",
+    "blog": "Blog",
+    "contact": "Bog'lanish",
+    "about": "Biz haqimizda",
+    "signIn": "Kirish",
+    "getStarted": "Boshlash"
+  },
+  "hero": {
+    "badge": "O'quv markazlar uchun #1 SaaS",
+    "title1": "O'quv markaz boshqaruvi",
+    "title2": "yanada osonroq",
+    "subtitle": "EPRO — multi-tenant SaaS platforma. O'quvchi, o'qituvchi, kurs, davomat, baholash, kassa va real-time chat — bir joyda.",
+    "ctaPrimary": "14 kunlik bepul sinov",
+    "ctaSecondary": "Imkoniyatlar haqida",
+    "noCard": "Kreditka kerak emas • 5 daqiqada o'rnatish",
+    "statsModules": "Modul",
+    "statsUptime": "Uptime SLA",
+    "statsLatency": "Sahifa yuklash"
+  },
+  "logos": {
+    "title": "Bizga ishongan markazlar"
+  },
+  "features": {
+    "title": "Bitta platforma — hammasi ichida",
+    "subtitle": "O'quv markaz uchun zarur barcha modullar. Excel'lardan, qog'ozlardan va alohida tizimlardan voz keching.",
+    "lms": {
+      "title": "LMS — kurs va dars",
+      "description": "Kurslar, modullar, darslar, vazifalar, testlar, video, materiallar — bir joyda."
+    },
+    "billing": {
+      "title": "Kassa va to'lovlar",
+      "description": "To'lov qabul, qarz boshqaruvi, salarinda hisobot. Click va Payme integratsiyasi tayyor."
+    },
+    "tenants": {
+      "title": "Multi-tenant arxitektura",
+      "description": "Har bir maktab o'z ma'lumotlar bazasi va subdomain'iga ega. To'liq izolyatsiya, GDPR."
+    },
+    "reports": {
+      "title": "Real-time hisobotlar",
+      "description": "O'qituvchi samaradorligi, kurs aktivligi, to'lov tahlili. Dashboard live yangilanadi."
+    },
+    "chat": {
+      "title": "Real-time chat",
+      "description": "Guruh ichi muloqot, ota-ona xabarnomalari, file sharing. WebSocket asosida."
+    },
+    "telegram": {
+      "title": "Telegram bot",
+      "description": "Davomat, baho, to'lov haqida ota-onaga avtomatik xabar. Bot orqali sorov ham."
+    },
+    "mobile": {
+      "title": "Mobile PWA",
+      "description": "Android/iOS native ilova kerak emas. Web app, lekin ilova tajribasi."
+    },
+    "security": {
+      "title": "Korporativ xavfsizlik",
+      "description": "2FA, audit log, RBAC, har kunlik backuplar, GDPR/Cooky Compliance."
+    },
+    "i18n": {
+      "title": "Ko'p tilli",
+      "description": "O'zbek, rus, ingliz, qoraqalpoq. Sizning mijozlaringiz qaysi tilda gapirishni xohlasa — shu tilda."
+    }
+  },
+  "pricing": {
+    "title": "Tariflar — shaffof va adolatli",
+    "subtitle": "Kichik markaz uchun ham, katta tarmoq uchun ham. To'lov o'sgan sari emas, sizning o'sishingiz bilan.",
+    "monthly": "Oylik",
+    "yearly": "Yillik",
+    "savePct": "2 oy bepul",
+    "popular": "ENG MASHHUR",
+    "currency": "so'm",
+    "perMonth": "oy",
+    "yearlyHint": "Yiliga {total} so'm — 2 oy bepul",
+    "startTrial": "14 kunlik sinov",
+    "contactSales": "Sotuv bilan bog'lanish",
+    "custom": "Maxsus",
+    "customHint": "Talab asosida narx",
+    "starter": {
+      "name": "Starter",
+      "description": "Kichik markaz, 100 gacha o'quvchi",
+      "f1": "100 ta o'quvchi",
+      "f2": "5 ta o'qituvchi",
+      "f3": "LMS + Kassa + Davomat",
+      "f4": "Telegram bot",
+      "f5": "Email yordam"
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "O'rta markaz, 500 gacha o'quvchi",
+      "f1": "500 ta o'quvchi",
+      "f2": "30 ta o'qituvchi",
+      "f3": "Barcha modullar (chat, gamification)",
+      "f4": "Real-time hisobotlar",
+      "f5": "Custom branding",
+      "f6": "Priority Telegram + telefon yordam"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "Katta tarmoq yoki maxsus talab",
+      "f1": "Cheklanmagan o'quvchi",
+      "f2": "Cheklanmagan o'qituvchi",
+      "f3": "Maxsus integratsiya",
+      "f4": "SLA va alohida server",
+      "f5": "Dedicated account manager"
+    }
+  },
+  "cta": {
+    "title": "Bugun boshlasangiz, ertaga farqni ko'rasiz",
+    "subtitle": "14 kun bepul sinov. Kreditka kerak emas. Istalgan paytda bekor qilish mumkin.",
+    "button": "Bepul sinov boshlash",
+    "secondary": "Tariflarni ko'rish"
+  },
+  "footer": {
+    "tagline": "O'quv markazlar uchun zamonaviy boshqaruv tizimi. Toshkentda 2026'da yaratildi.",
+    "product": "Mahsulot",
+    "company": "Kompaniya",
+    "legal": "Huquqiy",
+    "terms": "Foydalanish shartlari",
+    "privacy": "Maxfiylik siyosati",
+    "cookies": "Cookies siyosati",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "madeIn": "O'zbekistonda yaratildi"
+  },
+  "featuresPage": {
+    "badge": "Imkoniyatlar",
+    "title": "O'quv markazingiz uchun barcha vositalar",
+    "subtitle": "23 ta modul, ~380 ta API endpoint, 65+ sahifa. Lekin sizga bularning hammasini bilish shart emas — interfeys o'zi yo'l ko'rsatadi.",
+    "lms": {
+      "title": "LMS — kurs va dars boshqaruvi",
+      "description": "Klassik kursdan tortib, blended learning va onlayn-only formatlargacha. Vazifa, test, baho, sertifikat — barchasi avtomatik.",
+      "p1": "Kurslar, modullar, darslar — drag & drop tartiblash",
+      "p2": "Vazifa, test, savol bank — auto-grading qo'llab-quvvatlanadi",
+      "p3": "Video material xosting (S3/Bunny CDN)",
+      "p4": "Sertifikat PDF avtomatik generatsiya"
+    },
+    "billing": {
+      "title": "Kassa, qarz va to'lov",
+      "description": "Naqd, plastik, online to'lov — barchasi bir kassada. O'qituvchiga salarinda avtomatik hisoblash.",
+      "p1": "Click, Payme, Uzcard integratsiyasi",
+      "p2": "Qarz xabarnomalari (Telegram + SMS)",
+      "p3": "O'qituvchi salarinda foiz hisob-kitob",
+      "p4": "Excel/PDF hisobotlar — bir tugma"
+    },
+    "tenants": {
+      "title": "Multi-tenant — har maktab o'z olamida",
+      "description": "Filial yoki franshiza modeli? Har biri o'z subdomain, o'z DB, o'z brandingiga ega. Markaziy admin panel'dan boshqarasiz.",
+      "p1": "Subdomain per tenant (maktab1.epro.uz)",
+      "p2": "Tenant-level DB izolyatsiyasi",
+      "p3": "Markaziy super-admin panel"
+    },
+    "reports": {
+      "title": "Real-time hisobotlar",
+      "description": "Dashboard live yangilanadi. Sotuvga aylanish, davomat, o'qituvchi yuki — hammasi grafiklar bilan.",
+      "p1": "20+ widget — drag & drop layout",
+      "p2": "Custom date range, segment filter",
+      "p3": "Excel/PDF export, scheduled email"
+    },
+    "chat": {
+      "title": "Guruh va xabarnomalar",
+      "description": "Slack'simon real-time chat — guruh, kanal, DM. Ota-ona xabarnomalari, file sharing, screen capture.",
+      "p1": "Guruh chati va shaxsiy xabar",
+      "p2": "Fayl, rasm, ovozli xabar",
+      "p3": "Read receipts, typing indicator"
+    },
+    "telegram": {
+      "title": "Telegram bot integratsiyasi",
+      "description": "Ota-ona hammada Telegram bor. Davomat, baho, to'lov haqida xabar — botda. Sorov ham bot orqali.",
+      "p1": "Real-time push xabarnoma",
+      "p2": "Mini App — login parolsiz",
+      "p3": "Bot orqali to'lov so'rov"
+    }
+  },
+  "pricingPage": {
+    "title": "Sizning markazingiz uchun to'g'ri reja",
+    "subtitle": "14 kunlik bepul sinov. Kreditka kerak emas. Istalgan paytda boshqa rejaga o'tish mumkin.",
+    "faq": {
+      "title": "Tez-tez beriladigan savollar",
+      "q1": "14 kunlik sinov haqiqatan bepulmi?",
+      "a1": "Ha. Kreditka kerak emas, hech qanday yashirin to'lov yo'q. Sinov tugagach to'lamasangiz akkaunt o'chiriladi (lekin ma'lumotlar 30 kun saqlanadi).",
+      "q2": "To'lovlar qanday qabul qilinadi?",
+      "a2": "Click, Payme, Uzcard, Humo plastik kartalari, va bank o'tkazma. Yuridik shaxslar uchun rasmiy shartnoma va invoys beramiz.",
+      "q3": "Ma'lumotlarim qayerda saqlanadi?",
+      "a3": "Yevropadagi serverda (Germany), kunlik backup'lar bilan. Server O'zbekistonda joylashishini xohlasangiz Enterprise rejada bu mumkin.",
+      "q4": "Bir reja'dan boshqasiga o'tish mumkinmi?",
+      "a4": "Ha, istalgan paytda yuqoriroq yoki pastroq rejaga o'tish mumkin. To'lov pro-rata hisoblanadi.",
+      "q5": "Ma'lumotlarni export qilsa bo'ladimi?",
+      "a5": "Ha. Excel, PDF, JSON formatlarida to'liq ma'lumotni istalgan paytda yuklab olishingiz mumkin. Vendor lock-in yo'q."
+    }
+  },
+  "securityPage": {
+    "badge": "Enterprise-grade Security",
+    "title": "Sizning ma'lumotlaringiz — sizniki",
+    "subtitle": "Biz xavfsizlikni mahsulotning birinchi xususiyati deb hisoblaymiz, oxirgi emas. Audit, encryption, backup — barchasi standart.",
+    "isolation": {
+      "title": "Tenant izolyatsiyasi",
+      "description": "Har maktab o'z alohida MySQL bazasiga ega. Ma'lumotlar boshqa tenant'lar bilan aralashmaydi."
+    },
+    "encryption": {
+      "title": "TLS + at-rest encryption",
+      "description": "Barcha trafik HTTPS (Let's Encrypt). DB-da maxfiy maydonlar AES-256 bilan shifrlangan."
+    },
+    "backups": {
+      "title": "Avtomatik backuplar",
+      "description": "Har kuni 02:00 UTC. 30 kun saqlanadi. Geografik replikatsiya bilan."
+    },
+    "auth": {
+      "title": "2FA va sanctum tokens",
+      "description": "Google Authenticator yoki TOTP-compatible. SaaS admin uchun majburiy 2FA opsiyasi."
+    },
+    "audit": {
+      "title": "To'liq audit log",
+      "description": "Har bir muhim amal yoziladi (kim, qachon, nimani o'zgartirdi). 90 kun saqlanadi."
+    },
+    "infra": {
+      "title": "Infrastruktura",
+      "description": "Hetzner DC (Germany), DDoS protection, WAF, regular security audit."
+    }
+  },
+  "aboutPage": {
+    "title": "Biz haqimizda",
+    "lead": "EPRO — Toshkentdan, O'zbekiston bo'ylab. Repetitorlik markazlari uchun, ulardan bir o'sgan jamoa tomonidan.",
+    "mission": {
+      "title": "Vazifamiz",
+      "body": "O'quv markaz egalariga texnologiya muammosini hal qilib berib, ular asl ish — sifatli ta'lim berishga vaqt sarflashlariga imkon yaratish."
+    },
+    "story": {
+      "title": "Tariximiz",
+      "body": "2026-yil bahorida boshlandi. Mahalliy repetitorlik markaz egasidan eshitilgan og'riq — \"har oy 3 kun Excel ko'paytirishga ketadi\" — bizga bu loyihani boshlashga turtki bo'ldi. Hozir biz multi-tenant SaaS qurganmiz, bir yil ichida 100+ markazni xizmat ko'rsatishga shaymiz."
+    },
+    "values": {
+      "title": "Qadriyatlarimiz",
+      "v1": "Mahalliy birinchi — Yevropalik SaaS'larni nusxalamaymiz, O'zbek bozoriga ishlaydigan narsa quryapmiz",
+      "v2": "Tezlik — sahifa 1 soniyadan ortiq yuklasa, biz uyatchanmiz",
+      "v3": "Shaffoflik — narxlar ochiq, ma'lumotlar siznilki",
+      "v4": "Yordam — har mijoz Telegram'da bevosita biz bilan gaplasha oladi"
+    }
+  },
+  "contactPage": {
+    "title": "Bog'lanish",
+    "subtitle": "Demo so'rov, sotuv, yordam — bir necha daqiqa ichida javob beramiz.",
+    "channels": {
+      "telegram": "Telegram",
+      "email": "Email",
+      "phone": "Telefon"
+    },
+    "form": {
+      "name": "Ism",
+      "email": "Email",
+      "phone": "Telefon",
+      "message": "Xabar (markaz haqida, qanday yordam kerak)",
+      "submit": "Yuborish",
+      "privacy": "Yuborish orqali siz maxfiylik siyosatiga rozilik bildirasiz."
+    },
+    "errors": {
+      "name": "Kamida 2 ta belgi",
+      "email": "To'g'ri email kiriting",
+      "phone": "Kamida 7 ta belgi",
+      "message": "Kamida 10 ta belgi"
+    },
+    "toast": {
+      "successTitle": "Yuborildi!",
+      "successBody": "24 soat ichida siz bilan bog'lanamiz.",
+      "errorTitle": "Xatolik",
+      "errorBody": "Yuborishda muammo bo'ldi. Iltimos, Telegram orqali yozing."
+    }
+  },
+  "blogPage": {
+    "title": "Blog",
+    "subtitle": "Maktab boshqaruvi, EdTech va o'sib borayotgan biznes haqida o'ylar.",
+    "empty": "Hozircha post yo'q. Tez orada qaytib keling.",
+    "backToBlog": "Blog'ga qaytish",
+    "minRead": "daq o'qish"
+  },
+  "error": {
+    "notFoundTitle": "Sahifa topilmadi",
+    "notFoundMessage": "Bu sahifa mavjud emas yoki ko'chirilgan.",
+    "serverErrorTitle": "Server xatosi",
+    "serverErrorMessage": "Bir narsa noto'g'ri ketdi. Iltimos, biroz kutib qayta urinib ko'ring.",
+    "backHome": "Bosh sahifaga"
+  },
+  "seo": {
+    "home": {
+      "title": "EPRO — O'quv markaz uchun SaaS boshqaruv tizimi",
+      "description": "Maktab, repetitorlik markaz, akademiya uchun multi-tenant SaaS. LMS, kassa, davomat, real-time chat, Telegram bot — bir joyda."
+    },
+    "features": {
+      "title": "Imkoniyatlar — EPRO",
+      "description": "23 ta modul, 380+ API, real-time chat, multi-tenancy, GDPR. O'quv markaz uchun kerakli barcha vositalar."
+    },
+    "pricing": {
+      "title": "Tariflar — EPRO",
+      "description": "Starter, Pro, Enterprise rejalari. 14 kun bepul sinov, kreditka kerak emas."
+    },
+    "security": {
+      "title": "Xavfsizlik — EPRO",
+      "description": "TLS, AES-256, 2FA, audit log, kunlik backup. Sizning ma'lumotlaringiz xavfsiz."
+    },
+    "about": {
+      "title": "Biz haqimizda — EPRO",
+      "description": "Toshkentda yaratildi. Mahalliy bozor uchun, mahalliy jamoa tomonidan."
+    },
+    "contact": {
+      "title": "Bog'lanish — EPRO",
+      "description": "Demo so'rang, savol bering yoki sotuv jamoasi bilan gaplashing."
+    },
+    "blog": {
+      "title": "Blog — EPRO",
+      "description": "EdTech, maktab boshqaruvi va texnologiya haqida maqolalar."
+    }
+  }
+}

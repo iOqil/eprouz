@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "features": "Features", "pricing": "Pricing", "security": "Security",
+    "blog": "Blog", "contact": "Contact", "about": "About",
+    "signIn": "Sign in", "getStarted": "Get started"
+  },
+  "hero": {
+    "badge": "#1 SaaS for tutoring centers",
+    "title1": "Tutoring center management",
+    "title2": "made simple",
+    "subtitle": "EPRO is a multi-tenant SaaS platform. Students, teachers, courses, attendance, grading, billing, and real-time chat — all in one place.",
+    "ctaPrimary": "Start 14-day trial", "ctaSecondary": "Explore features",
+    "noCard": "No credit card • Set up in 5 minutes",
+    "statsModules": "Modules", "statsUptime": "Uptime SLA", "statsLatency": "Page load"
+  },
+  "logos": { "title": "Trusted by centers" },
+  "features": {
+    "title": "One platform — everything in it",
+    "subtitle": "All modules a tutoring center needs. Ditch the spreadsheets and disconnected tools.",
+    "lms":       { "title": "LMS — courses & lessons", "description": "Courses, modules, lessons, assignments, tests, video, materials — all together." },
+    "billing":   { "title": "Billing & payments", "description": "Receive, track debt, payroll. Click and Payme ready." },
+    "tenants":   { "title": "Multi-tenant architecture", "description": "Each school gets its own DB and subdomain. Full isolation, GDPR." },
+    "reports":   { "title": "Real-time reports", "description": "Teacher performance, course activity, payment analytics — live." },
+    "chat":      { "title": "Real-time chat", "description": "Group chat, parent notifications, file sharing. WebSocket-powered." },
+    "telegram":  { "title": "Telegram bot", "description": "Auto-notifications to parents. Requests via bot." },
+    "mobile":    { "title": "Mobile PWA", "description": "No native Android/iOS apps needed. Web, but app-like." },
+    "security":  { "title": "Enterprise security", "description": "2FA, audit, RBAC, daily backups, GDPR/Cookie compliance." },
+    "i18n":      { "title": "Multi-language", "description": "Uzbek, Russian, English. Your customers in their language." }
+  },
+  "pricing": {
+    "title": "Pricing — transparent and fair",
+    "subtitle": "For small centers and big networks. Pay as you grow.",
+    "monthly": "Monthly", "yearly": "Yearly", "savePct": "2 months free",
+    "popular": "POPULAR", "currency": "UZS", "perMonth": "mo",
+    "yearlyHint": "{total} UZS/year — 2 months free",
+    "startTrial": "Start 14-day trial", "contactSales": "Contact sales",
+    "custom": "Custom", "customHint": "Quote on request",
+    "starter": { "name": "Starter", "description": "Small center, up to 100 students",
+      "f1": "100 students", "f2": "5 teachers", "f3": "LMS + Billing + Attendance", "f4": "Telegram bot", "f5": "Email support" },
+    "pro": { "name": "Pro", "description": "Medium center, up to 500 students",
+      "f1": "500 students", "f2": "30 teachers", "f3": "All modules (chat, gamification)",
+      "f4": "Real-time reports", "f5": "Custom branding", "f6": "Priority support" },
+    "enterprise": { "name": "Enterprise", "description": "Large network or special needs",
+      "f1": "Unlimited students", "f2": "Unlimited teachers",
+      "f3": "Custom integrations", "f4": "SLA & dedicated server", "f5": "Dedicated account manager" }
+  },
+  "cta": {
+    "title": "Start today, see the difference tomorrow",
+    "subtitle": "14 days free. No card. Cancel anytime.",
+    "button": "Start free trial", "secondary": "View pricing"
+  },
+  "footer": {
+    "tagline": "Modern management for tutoring centers. Built in Tashkent, 2026.",
+    "product": "Product", "company": "Company", "legal": "Legal",
+    "terms": "Terms", "privacy": "Privacy", "cookies": "Cookies",
+    "rights": "All rights reserved.", "madeIn": "Made in Uzbekistan"
+  },
+  "featuresPage": {
+    "badge": "Features", "title": "Every tool your center needs",
+    "subtitle": "23 modules, ~380 APIs, 65+ pages. But you don't need to know it all — the UI guides you.",
+    "lms": { "title": "LMS", "description": "Classic to blended-learning and online-only.",
+      "p1": "Courses, modules, lessons — drag & drop", "p2": "Assignments, tests — auto-grading",
+      "p3": "Video hosting (S3/Bunny CDN)", "p4": "PDF certificates auto-generated" },
+    "billing": { "title": "Billing & payments", "description": "Cash, card, online — one cashbox.",
+      "p1": "Click, Payme, Uzcard", "p2": "Debt notifications (Telegram + SMS)",
+      "p3": "Teacher payroll % calculation", "p4": "Excel/PDF reports one-click" },
+    "tenants": { "title": "Multi-tenancy", "description": "Branch or franchise — each in its subdomain.",
+      "p1": "Subdomain per tenant (school1.epro.uz)", "p2": "DB-level isolation", "p3": "Central super-admin panel" },
+    "reports": { "title": "Real-time reports", "description": "Dashboard updates live.",
+      "p1": "20+ widgets — drag & drop", "p2": "Custom ranges, filters", "p3": "Excel/PDF export, scheduled email" },
+    "chat": { "title": "Chat & messaging", "description": "Slack-like real-time chat.",
+      "p1": "Group chats and DMs", "p2": "Files, images, voice", "p3": "Read receipts, typing" },
+    "telegram": { "title": "Telegram bot", "description": "All parents are on Telegram.",
+      "p1": "Real-time push notifications", "p2": "Mini App — no password", "p3": "Payment requests via bot" }
+  },
+  "pricingPage": {
+    "title": "The right plan for your center",
+    "subtitle": "14 days free. No card. Switch plans anytime.",
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": "Is the 14-day trial really free?",
+      "a1": "Yes. No card needed, no hidden fees. Data is kept 30 days after trial expires.",
+      "q2": "How do you accept payments?",
+      "a2": "Click, Payme, Uzcard, Humo, bank transfer. Legal entities get proper contracts and invoices.",
+      "q3": "Where is my data stored?",
+      "a3": "Germany DC with daily backups. Enterprise plan can use Uzbekistan-local servers.",
+      "q4": "Can I switch plans?",
+      "a4": "Yes, anytime up or down. Pro-rata billing.",
+      "q5": "Can I export my data?",
+      "a5": "Yes — Excel/PDF/JSON. No vendor lock-in."
+    }
+  },
+  "securityPage": {
+    "badge": "Enterprise-grade security",
+    "title": "Your data — yours",
+    "subtitle": "Security is feature #1, not a checkbox.",
+    "isolation":  { "title": "Tenant isolation", "description": "Each school has its own MySQL DB." },
+    "encryption": { "title": "TLS + at-rest encryption", "description": "HTTPS everywhere. Sensitive fields AES-256." },
+    "backups":    { "title": "Auto-backups", "description": "Daily at 02:00 UTC. 30-day retention." },
+    "auth":       { "title": "2FA + sanctum tokens", "description": "TOTP-compatible. Mandatory 2FA for admins." },
+    "audit":      { "title": "Full audit log", "description": "Who, when, what. 90-day retention." },
+    "infra":      { "title": "Infrastructure", "description": "Hetzner DC, DDoS protection, WAF." }
+  },
+  "aboutPage": {
+    "title": "About",
+    "lead": "EPRO — from Tashkent, across Uzbekistan. For tutoring centers, by a team that grew out of one.",
+    "mission": { "title": "Mission", "body": "Solve the tech problem for center owners, so they can focus on what matters: quality education." },
+    "story":   { "title": "Story", "body": "Spring 2026. One local tutor's pain — \"3 days a month on Excel\" — kicked this off." },
+    "values":  { "title": "Values",
+      "v1": "Local-first — we don't copy European SaaS, we build for Uzbek market",
+      "v2": "Speed — if a page takes > 1s, we're embarrassed",
+      "v3": "Transparency — prices open, data yours",
+      "v4": "Support — every customer messages us directly on Telegram" }
+  },
+  "contactPage": {
+    "title": "Get in touch",
+    "subtitle": "Demo, sales, support — reply in minutes.",
+    "channels": { "telegram": "Telegram", "email": "Email", "phone": "Phone" },
+    "form": { "name": "Name", "email": "Email", "phone": "Phone",
+      "message": "Message (about the center, what help)",
+      "submit": "Send", "privacy": "By sending, you agree to the privacy policy." },
+    "errors": { "name": "At least 2 characters", "email": "Valid email please",
+      "phone": "At least 7 characters", "message": "At least 10 characters" },
+    "toast": { "successTitle": "Sent!", "successBody": "We'll reach out within 24 hours.",
+      "errorTitle": "Error", "errorBody": "Couldn't send. Please write us on Telegram." }
+  },
+  "blogPage": { "title": "Blog", "subtitle": "Thoughts on running a center, EdTech, and growing the business.",
+    "empty": "No posts yet. Check back soon.", "backToBlog": "Back to blog", "minRead": "min read" },
+  "error": { "notFoundTitle": "Page not found", "notFoundMessage": "This page doesn't exist or has moved.",
+    "serverErrorTitle": "Server error", "serverErrorMessage": "Something went wrong. Try again in a moment.",
+    "backHome": "Back home" },
+  "seo": {
+    "home":     { "title": "EPRO — SaaS management for tutoring centers", "description": "Multi-tenant SaaS for schools and tutoring centers. LMS, billing, chat, Telegram bot." },
+    "features": { "title": "Features — EPRO",                              "description": "23 modules, 380+ APIs, real-time chat, multi-tenancy, GDPR." },
+    "pricing":  { "title": "Pricing — EPRO",                               "description": "Starter, Pro, Enterprise. 14-day free trial." },
+    "security": { "title": "Security — EPRO",                              "description": "TLS, AES-256, 2FA, audit log, daily backups." },
+    "about":    { "title": "About — EPRO",                                 "description": "Built in Tashkent. For the local market." },
+    "contact":  { "title": "Contact — EPRO",                               "description": "Demo, questions, sales." },
+    "blog":     { "title": "Blog — EPRO",                                  "description": "EdTech, school management, technology." }
+  }
+}
