@@ -1,0 +1,21 @@
+/*
+Theme Name: EPRO — Classic
+Theme URI: https://epro.uz
+Author: EPRO
+Author URI: https://epro.uz
+Description: Classic PHP theme for the EPRO marketing site — a modern indigo SaaS look (hero, features, pricing, CTA) faithfully ported from the Nuxt/Tailwind design. Variant A of two. Styling is powered by Tailwind (CDN), dark mode included.
+Version: 1.0.0
+Requires at least: 6.4
+Tested up to: 6.7
+Requires PHP: 8.0
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: epro-classic
+Tags: saas, marketing, landing-page, custom-menu, featured-images, translation-ready, full-width-template
+*/
+
+/*
+ * Visual styles live in Tailwind utility classes (compiled at runtime by the
+ * Tailwind Play CDN, configured in functions.php) plus assets/css/theme.css.
+ * This file only carries the required WordPress theme header.
+ */

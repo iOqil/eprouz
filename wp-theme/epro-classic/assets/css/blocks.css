@@ -1,0 +1,197 @@
+/*
+ * Front-end + editor styling for Gutenberg / core blocks in post & page content.
+ * Visual rules carry two selectors — `.entry-content` (front-end) and
+ * `.editor-styles-wrapper` (editor) — so authoring matches the published page.
+ * Alignment break-out and dark-mode tweaks apply on the front-end only.
+ * Brand-accent colours read the runtime CSS vars (see functions.php) and fall
+ * back to indigo in the editor.
+ */
+
+/* ------------------------------------------------------------------ Buttons */
+.entry-content .wp-block-button__link,
+.editor-styles-wrapper .wp-block-button__link {
+	background-color: var(--epro-primary-500, #6366f1);
+	color: #fff;
+	border-radius: 0.5rem;
+	padding: 0.65rem 1.25rem;
+	font-weight: 600;
+	font-size: 0.925rem;
+	text-decoration: none;
+	transition: background-color 0.15s ease;
+}
+.entry-content .wp-block-button__link:hover,
+.editor-styles-wrapper .wp-block-button__link:hover {
+	background-color: var(--epro-primary-600, #4f46e5);
+}
+.entry-content .wp-block-button.is-style-outline .wp-block-button__link,
+.editor-styles-wrapper .wp-block-button.is-style-outline .wp-block-button__link {
+	background-color: transparent;
+	color: var(--epro-primary-600, #4f46e5);
+	border: 1px solid currentColor;
+}
+
+/* ----------------------------------------------------------------- Quotes */
+.entry-content .wp-block-quote,
+.editor-styles-wrapper .wp-block-quote {
+	border-left: 3px solid var(--epro-primary-500, #6366f1);
+	padding: 0.25rem 0 0.25rem 1.25rem;
+	font-style: italic;
+	color: #475569;
+}
+.entry-content .wp-block-quote cite,
+.editor-styles-wrapper .wp-block-quote cite {
+	display: block;
+	margin-top: 0.5rem;
+	font-style: normal;
+	font-size: 0.85rem;
+	color: #64748b;
+}
+.entry-content .wp-block-pullquote,
+.editor-styles-wrapper .wp-block-pullquote {
+	border-top: 2px solid var(--epro-primary-500, #6366f1);
+	border-bottom: 2px solid var(--epro-primary-500, #6366f1);
+	padding: 1.75rem 0;
+	text-align: center;
+}
+.entry-content .wp-block-pullquote blockquote,
+.editor-styles-wrapper .wp-block-pullquote blockquote {
+	font-family: Manrope, Inter, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+/* ------------------------------------------------------------------ Tables */
+.entry-content .wp-block-table table,
+.editor-styles-wrapper .wp-block-table table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 0.925rem;
+}
+.entry-content .wp-block-table td,
+.entry-content .wp-block-table th,
+.editor-styles-wrapper .wp-block-table td,
+.editor-styles-wrapper .wp-block-table th {
+	border: 1px solid #e2e8f0;
+	padding: 0.6rem 0.85rem;
+}
+.entry-content .wp-block-table thead th,
+.editor-styles-wrapper .wp-block-table thead th {
+	background: #f8fafc;
+	font-weight: 600;
+	text-align: left;
+}
+.entry-content .wp-block-table figcaption,
+.editor-styles-wrapper .wp-block-table figcaption {
+	font-size: 0.8rem;
+	color: #64748b;
+}
+
+/* ----------------------------------------------------------- Code / preformatted */
+.entry-content .wp-block-code,
+.entry-content .wp-block-preformatted,
+.editor-styles-wrapper .wp-block-code,
+.editor-styles-wrapper .wp-block-preformatted {
+	background: #f1f5f9;
+	border-radius: 0.5rem;
+	padding: 1rem 1.15rem;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+	font-size: 0.85rem;
+	line-height: 1.6;
+	overflow: auto;
+}
+
+/* --------------------------------------------------------------- Separators */
+.entry-content .wp-block-separator,
+.editor-styles-wrapper .wp-block-separator {
+	border: 0;
+	border-top: 1px solid #e2e8f0;
+	max-width: 6rem;
+	margin-inline: auto;
+	opacity: 1;
+}
+.entry-content .wp-block-separator.is-style-wide,
+.entry-content .wp-block-separator.alignwide,
+.entry-content .wp-block-separator.alignfull,
+.editor-styles-wrapper .wp-block-separator.is-style-wide {
+	max-width: 100%;
+}
+
+/* --------------------------------------------------------------- Figures / captions */
+.entry-content figcaption,
+.entry-content .wp-element-caption,
+.editor-styles-wrapper figcaption,
+.editor-styles-wrapper .wp-element-caption {
+	color: #64748b;
+	font-size: 0.8rem;
+	text-align: center;
+	margin-top: 0.5rem;
+}
+
+/* --------------------------------------------------------------- Embeds (responsive) */
+.entry-content .wp-block-embed iframe,
+.entry-content .wp-block-embed__wrapper iframe {
+	max-width: 100%;
+}
+.entry-content .wp-block-embed.is-type-video .wp-block-embed__wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+.entry-content .wp-block-embed.is-type-video .wp-block-embed__wrapper iframe {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* --------------------------------------------------------------- Cover block */
+.entry-content .wp-block-cover,
+.editor-styles-wrapper .wp-block-cover {
+	border-radius: 0.75rem;
+	overflow: hidden;
+}
+
+/* --------------------------------------------------------------- Alignment (front-end) */
+.entry-content .alignwide,
+.entry-content .alignfull {
+	margin-left: 50%;
+	transform: translateX(-50%);
+	max-width: none;
+}
+.entry-content .alignwide {
+	width: min(92vw, 1040px);
+}
+.entry-content .alignfull {
+	width: 100vw;
+}
+.entry-content .alignleft {
+	float: left;
+	margin: 0.4rem 1.5rem 1rem 0;
+	max-width: 50%;
+}
+.entry-content .alignright {
+	float: right;
+	margin: 0.4rem 0 1rem 1.5rem;
+	max-width: 50%;
+}
+.entry-content .aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/* --------------------------------------------------------------- Dark mode (front-end) */
+.dark .entry-content .wp-block-quote { color: #94a3b8; }
+.dark .entry-content .wp-block-quote cite { color: #64748b; }
+.dark .entry-content .wp-block-table td,
+.dark .entry-content .wp-block-table th { border-color: #1e293b; }
+.dark .entry-content .wp-block-table thead th { background: #0f172a; }
+.dark .entry-content .wp-block-code,
+.dark .entry-content .wp-block-preformatted { background: #1e293b; color: #e2e8f0; }
+.dark .entry-content .wp-block-separator { border-color: #1e293b; }
+.dark .entry-content figcaption,
+.dark .entry-content .wp-element-caption { color: #94a3b8; }
+
+@media (prefers-reduced-motion: reduce) {
+	.entry-content .wp-block-button__link { transition: none; }
+}

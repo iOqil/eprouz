@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
+    '@nuxt/eslint',
     '@nuxt/ui',
     '@nuxt/content',
     '@nuxt/image',
@@ -26,9 +27,23 @@ export default defineNuxtConfig({
   // Static generation for marketing site (faster, cheaper)
   nitro: {
     prerender: {
-      routes: ['/', '/features', '/pricing', '/about', '/contact', '/security', '/blog'],
+      // Marketing pages stay static. Blog is now SSR + SWR (sourced from WordPress),
+      // so it is excluded here to keep the build free of any WP dependency.
+      routes: ['/', '/features', '/pricing', '/about', '/contact', '/security'],
       crawlLinks: true,
+      ignore: [/^\/(?:ru\/|en\/)?blog(?:\/|$)/],
       failOnError: false,
+    },
+    // Near-instant content updates without a full rebuild: serve cached HTML/JSON
+    // and revalidate in the background. Invalidated on publish via /api/revalidate.
+    routeRules: {
+      '/api/cms/**': { cache: { swr: true, maxAge: 300 } },
+      '/blog': { swr: 300 },
+      '/blog/**': { swr: 300 },
+      '/ru/blog': { swr: 300 },
+      '/ru/blog/**': { swr: 300 },
+      '/en/blog': { swr: 300 },
+      '/en/blog/**': { swr: 300 },
     },
     compressPublicAssets: true,
   },
@@ -64,6 +79,8 @@ export default defineNuxtConfig({
   image: {
     formats: ['avif', 'webp'],
     quality: 80,
+    // Allow @nuxt/image to optimize media served from the headless WordPress host
+    domains: ['cms.epro.uz'],
   },
 
   // OG / Twitter defaults
@@ -75,6 +92,8 @@ export default defineNuxtConfig({
   // Sitemap
   sitemap: {
     sitemaps: true,
+    // Dynamic blog URLs (all locales) sourced from WordPress at runtime
+    sources: ['/api/__sitemap__/urls'],
   },
 
   // Robots
@@ -99,6 +118,11 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
+    // Server-only (never exposed to the client). Override at runtime on Coolify
+    // via NUXT_WP_GRAPHQL_ENDPOINT / NUXT_WP_REVALIDATE_SECRET / NUXT_WP_PREVIEW_TOKEN.
+    wpGraphqlEndpoint: process.env.WP_GRAPHQL_ENDPOINT || 'https://cms.epro.uz/graphql',
+    wpRevalidateSecret: process.env.WP_REVALIDATE_SECRET || '',
+    wpPreviewToken: process.env.WP_PREVIEW_TOKEN || '',
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://epro.uz',
       apiBase: process.env.NUXT_PUBLIC_API_BASE || 'https://api.epro.uz',

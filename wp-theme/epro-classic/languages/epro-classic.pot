@@ -1,0 +1,553 @@
+# Translation template for the EPRO — Classic theme.
+# Copyright (C) 2026 EPRO
+# This file is distributed under the GPL-2.0-or-later license.
+msgid ""
+msgstr ""
+"Project-Id-Version: EPRO - Classic 1.0.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: epro-classic\n"
+
+msgid "\"%s\" bo'yicha natijalar"
+msgstr ""
+
+msgid "\"Boshlash\" havolasi"
+msgstr ""
+
+msgid "\"Boshlash\" tugmasi matni"
+msgstr ""
+
+msgid "\"Kirish\" havolasi"
+msgstr ""
+
+msgid "\"Kirish\" tugmasi matni"
+msgstr ""
+
+msgid "%d daq o'qish"
+msgstr ""
+
+msgid "%s Oldingi maqola"
+msgstr ""
+
+msgid "+998 ..."
+msgstr ""
+
+msgid "14 kunlik bepul sinov"
+msgstr ""
+
+msgid "20+ widget — drag & drop layout"
+msgstr ""
+
+msgid "2026-yil bahorida boshlandi. Mahalliy repetitorlik markaz egasidan eshitilgan og'riq — har oy 3 kun Excel ko'paytirishga ketadi — bizga bu loyihani boshlashga turtki bo'ldi. Hozir biz multi-tenant SaaS qurganmiz, bir yil ichida 100+ markazni xizmat ko'rsatishga shaymiz."
+msgstr ""
+
+msgid "23 ta modul, ~380 ta API endpoint, 65+ sahifa. Lekin sizga bularning hammasini bilish shart emas — interfeys o'zi yo'l ko'rsatadi."
+msgstr ""
+
+msgid "24 soat ichida siz bilan bog'lanamiz."
+msgstr ""
+
+msgid "2FA va sanctum tokens"
+msgstr ""
+
+msgid "@EproSupportBot"
+msgstr ""
+
+msgid "Asosiy kontentga o'tish"
+msgstr ""
+
+msgid "Asosiy menyu"
+msgstr ""
+
+msgid "Asosiy tugma havolasi"
+msgstr ""
+
+msgid "Asosiy tugma matni"
+msgstr ""
+
+msgid "Avtomatik backuplar"
+msgstr ""
+
+msgid "Badge"
+msgstr ""
+
+msgid "Barcha trafik HTTPS (Let's Encrypt). DB-da maxfiy maydonlar AES-256 bilan shifrlangan."
+msgstr ""
+
+msgid "Biz haqimizda"
+msgstr ""
+
+msgid "Biz xavfsizlikni mahsulotning birinchi xususiyati deb hisoblaymiz, oxirgi emas. Audit, encryption, backup — barchasi standart."
+msgstr ""
+
+msgid "Blog"
+msgstr ""
+
+msgid "Blogni ko'rish"
+msgstr ""
+
+msgid "Bo'limni ko'rsatish"
+msgstr ""
+
+msgid "Bog'lanish"
+msgstr ""
+
+msgid "Bosh sahifa"
+msgstr ""
+
+msgid "Bosh sahifaga"
+msgstr ""
+
+msgid "Bot orqali to'lov so'rov"
+msgstr ""
+
+msgid "Breadcrumb"
+msgstr ""
+
+msgid "Brend rangi"
+msgstr ""
+
+msgid "Bu sahifa mavjud emas yoki ko'chirilgan."
+msgstr ""
+
+msgid "CTA banner"
+msgstr ""
+
+msgid "Click, Payme, Uzcard integratsiyasi"
+msgstr ""
+
+msgid "Cookies siyosati"
+msgstr ""
+
+msgid "Custom date range, segment filter"
+msgstr ""
+
+msgid "Dashboard live yangilanadi. Sotuvga aylanish, davomat, o'qituvchi yuki — hammasi grafiklar bilan."
+msgstr ""
+
+msgid "Demo so'rov, sotuv, yordam — bir necha daqiqa ichida javob beramiz."
+msgstr ""
+
+msgid "ENG MASHHUR"
+msgstr ""
+
+msgid "EPRO sozlamalari"
+msgstr ""
+
+msgid "EPRO — Toshkentdan, O'zbekiston bo'ylab. Repetitorlik markazlari uchun, ulardan bir o'sgan jamoa tomonidan."
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Enterprise-grade Security"
+msgstr ""
+
+msgid "Excel/PDF export, scheduled email"
+msgstr ""
+
+msgid "Excel/PDF hisobotlar — bir tugma"
+msgstr ""
+
+msgid "Fayl, rasm, ovozli xabar"
+msgstr ""
+
+msgid "Filial yoki franshiza modeli? Har biri o'z subdomain, o'z DB, o'z brandingiga ega. Markaziy admin panel'dan boshqarasiz."
+msgstr ""
+
+msgid "Footer (quyi panel)"
+msgstr ""
+
+msgid "Footer ustunlari tepasida ko'rinadi (ixtiyoriy)."
+msgstr ""
+
+msgid "Footer widgetlari"
+msgstr ""
+
+msgid "Footer — Huquqiy"
+msgstr ""
+
+msgid "Footer — Kompaniya"
+msgstr ""
+
+msgid "Footer — Mahsulot"
+msgstr ""
+
+msgid "Foydalanish shartlari"
+msgstr ""
+
+msgid "GitHub havolasi"
+msgstr ""
+
+msgid "Google Authenticator yoki TOTP-compatible. SaaS admin uchun majburiy 2FA opsiyasi."
+msgstr ""
+
+msgid "Guruh chati va shaxsiy xabar"
+msgstr ""
+
+msgid "Guruh va xabarnomalar"
+msgstr ""
+
+msgid "Har bir muhim amal yoziladi (kim, qachon, nimani o'zgartirdi). 90 kun saqlanadi."
+msgstr ""
+
+msgid "Har kuni 02:00 UTC. 30 kun saqlanadi. Geografik replikatsiya bilan."
+msgstr ""
+
+msgid "Har maktab o'z alohida MySQL bazasiga ega. Ma'lumotlar boshqa tenant'lar bilan aralashmaydi."
+msgstr ""
+
+msgid "Header (yuqori panel)"
+msgstr ""
+
+msgid "Hero (asosiy blok)"
+msgstr ""
+
+msgid "Hetzner DC (Germany), DDoS protection, WAF, regular security audit."
+msgstr ""
+
+msgid "Huquqiy"
+msgstr ""
+
+msgid "Ikkilamchi tugma havolasi"
+msgstr ""
+
+msgid "Ikkilamchi tugma matni"
+msgstr ""
+
+msgid "Imkoniyat %d — ikona"
+msgstr ""
+
+msgid "Imkoniyat %d — sarlavha"
+msgstr ""
+
+msgid "Imkoniyat %d — tavsif"
+msgstr ""
+
+msgid "Imkoniyatlar"
+msgstr ""
+
+msgid "Infrastruktura"
+msgstr ""
+
+msgid "Ism"
+msgstr ""
+
+msgid "Izoh qoldirish"
+msgstr ""
+
+msgid "Izohlar (%s)"
+msgstr ""
+
+msgid "Izohlar yopilgan."
+msgstr ""
+
+msgid "Kassa, qarz va to'lov"
+msgstr ""
+
+msgid "Keyingi"
+msgstr ""
+
+msgid "Keyingi maqola %s"
+msgstr ""
+
+msgid "Klassik kursdan tortib, blended learning va onlayn-only formatlargacha. Vazifa, test, baho, sertifikat — barchasi avtomatik."
+msgstr ""
+
+msgid "Kompaniya"
+msgstr ""
+
+msgid "Kurslar, modullar, darslar — drag & drop tartiblash"
+msgstr ""
+
+msgid "LMS — kurs va dars boshqaruvi"
+msgstr ""
+
+msgid "Logo 1 — initsial"
+msgstr ""
+
+msgid "Logo 1 — nom"
+msgstr ""
+
+msgid "Logo 2 — initsial"
+msgstr ""
+
+msgid "Logo 2 — nom"
+msgstr ""
+
+msgid "Logo 3 — initsial"
+msgstr ""
+
+msgid "Logo 3 — nom"
+msgstr ""
+
+msgid "Logo 4 — initsial"
+msgstr ""
+
+msgid "Logo 4 — nom"
+msgstr ""
+
+msgid "Logo 5 — initsial"
+msgstr ""
+
+msgid "Logo 5 — nom"
+msgstr ""
+
+msgid "Logo 6 — initsial"
+msgstr ""
+
+msgid "Logo 6 — nom"
+msgstr ""
+
+msgid "Logotiplar"
+msgstr ""
+
+msgid "Mahalliy birinchi — Yevropalik SaaS'larni nusxalamaymiz, O'zbek bozoriga ishlaydigan narsa quryapmiz"
+msgstr ""
+
+msgid "Mahsulot"
+msgstr ""
+
+msgid "Markaziy super-admin panel"
+msgstr ""
+
+msgid "Maxfiylik siyosati"
+msgstr ""
+
+msgid "Maxsus"
+msgstr ""
+
+msgid "Maydonlarni to'g'ri to'ldiring."
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Mini App — login parolsiz"
+msgstr ""
+
+msgid "Mualliflik matni"
+msgstr ""
+
+msgid "Multi-tenant — har maktab o'z olamida"
+msgstr ""
+
+msgid "Naqd, plastik, online to'lov — barchasi bir kassada. O'qituvchiga salarinda avtomatik hisoblash."
+msgstr ""
+
+msgid "O'qituvchi salarinda foiz hisob-kitob"
+msgstr ""
+
+msgid "O'quv markaz egalariga texnologiya muammosini hal qilib berib, ular asl ish — sifatli ta'lim berishga vaqt sarflashlariga imkon yaratish."
+msgstr ""
+
+msgid "O'quv markazingiz uchun barcha vositalar"
+msgstr ""
+
+msgid "Oldingi"
+msgstr ""
+
+msgid "Ota-ona hammada Telegram bor. Davomat, baho, to'lov haqida xabar — botda. So'rov ham bot orqali."
+msgstr ""
+
+msgid "Oylik"
+msgstr ""
+
+msgid "Pastki o'ng matn"
+msgstr ""
+
+msgid "Qadriyatlarimiz"
+msgstr ""
+
+msgid "Qarz xabarnomalari (Telegram + SMS)"
+msgstr ""
+
+msgid "Qidirish"
+msgstr ""
+
+msgid "Qidirish..."
+msgstr ""
+
+msgid "Qidiruv"
+msgstr ""
+
+msgid "Ranglar"
+msgstr ""
+
+msgid "Read receipts, typing indicator"
+msgstr ""
+
+msgid "Real-time hisobotlar"
+msgstr ""
+
+msgid "Real-time push xabarnoma"
+msgstr ""
+
+msgid "Sahifa topilmadi"
+msgstr ""
+
+msgid "Sahifalar:"
+msgstr ""
+
+msgid "Sarlavha"
+msgstr ""
+
+msgid "Sarlavha (1-qism)"
+msgstr ""
+
+msgid "Sarlavha (gradient qism)"
+msgstr ""
+
+msgid "Sertifikat PDF avtomatik generatsiya"
+msgstr ""
+
+msgid "Shaffoflik — narxlar ochiq, ma'lumotlar siznilki"
+msgstr ""
+
+msgid "Sinov haqiqatan bepulmi?"
+msgstr ""
+
+msgid "Sizning ma'lumotlaringiz — sizniki"
+msgstr ""
+
+msgid "Slack'simon real-time chat — guruh, kanal, DM. Ota-ona xabarnomalari, file sharing, screen capture."
+msgstr ""
+
+msgid "Statistika 1 — izoh"
+msgstr ""
+
+msgid "Statistika 1 — qiymat"
+msgstr ""
+
+msgid "Statistika 2 — izoh"
+msgstr ""
+
+msgid "Statistika 2 — qiymat"
+msgstr ""
+
+msgid "Statistika 3 — izoh"
+msgstr ""
+
+msgid "Statistika 3 — qiymat"
+msgstr ""
+
+msgid "Subdomain per tenant (maktab1.epro.uz)"
+msgstr ""
+
+msgid "TLS + at-rest encryption"
+msgstr ""
+
+msgid "Talab asosida narx"
+msgstr ""
+
+msgid "Tarif %d — ajratib ko'rsatish"
+msgstr ""
+
+msgid "Tarif %d — nom"
+msgstr ""
+
+msgid "Tarif %d — oylik narx (bo'sh = Maxsus)"
+msgstr ""
+
+msgid "Tarif %d — tavsif"
+msgstr ""
+
+msgid "Tarif %d — tugma matni"
+msgstr ""
+
+msgid "Tarif %d — xususiyatlar (har qatorda bittadan)"
+msgstr ""
+
+msgid "Tarif %d — yillik narx"
+msgstr ""
+
+msgid "Tariflar"
+msgstr ""
+
+msgid "Tariximiz"
+msgstr ""
+
+msgid "Tavsif"
+msgstr ""
+
+msgid "Telefon"
+msgstr ""
+
+msgid "Telegram"
+msgstr ""
+
+msgid "Telegram bot integratsiyasi"
+msgstr ""
+
+msgid "Telegram havolasi"
+msgstr ""
+
+msgid "Tenant izolyatsiyasi"
+msgstr ""
+
+msgid "Tenant-level DB izolyatsiyasi"
+msgstr ""
+
+msgid "Tez-tez beriladigan savollar"
+msgstr ""
+
+msgid "Tezlik — sahifa 1 soniyadan ortiq yuklasa, biz uyatchanmiz"
+msgstr ""
+
+msgid "To'liq audit log"
+msgstr ""
+
+msgid "Toggle theme"
+msgstr ""
+
+msgid "Tugmalar ostidagi matn"
+msgstr ""
+
+msgid "Tugmalar, urg'u va gradientlar shu rangdan hosil bo'ladi."
+msgstr ""
+
+msgid "Vazifa, test, savol bank — auto-grading qo'llab-quvvatlanadi"
+msgstr ""
+
+msgid "Vazifamiz"
+msgstr ""
+
+msgid "Video material xosting (S3/Bunny CDN)"
+msgstr ""
+
+msgid "Xabar"
+msgstr ""
+
+msgid "Xabar (markaz haqida, qanday yordam kerak)"
+msgstr ""
+
+msgid "Xatolik"
+msgstr ""
+
+msgid "Xavfsizlik"
+msgstr ""
+
+msgid "Yiliga %s so'm — 2 oy bepul"
+msgstr ""
+
+msgid "Yillik • 2 oy bepul"
+msgstr ""
+
+msgid "Yordam — har mijoz Telegram'da bevosita biz bilan gaplasha oladi"
+msgstr ""
+
+msgid "Yuborildi!"
+msgstr ""
+
+msgid "Yuborish"
+msgstr ""
+
+msgid "Yuborish orqali siz maxfiylik siyosatiga rozilik bildirasiz."
+msgstr ""
+
+msgid "Yuborishda muammo bo'ldi. Iltimos, Telegram orqali yozing."
+msgstr ""
+
+msgid "[EPRO] Yangi murojaat — %s"
+msgstr ""
+
