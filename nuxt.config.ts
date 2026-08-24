@@ -36,7 +36,7 @@ export default defineNuxtConfig({
   i18n: {
     defaultLocale: 'uz',
     lazy: false,
-    langDir: 'i18n/locales', // Aynan shu yo'l bo'lishi kerak
+    langDir: 'locales', 
     locales: [
       { code: 'uz', language: 'uz-UZ', name: "O'zbekcha", file: 'uz.json' },
       { code: 'ru', language: 'ru-RU', name: 'Русский', file: 'ru.json' },
