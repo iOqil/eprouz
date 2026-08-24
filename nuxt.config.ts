@@ -35,11 +35,16 @@ export default defineNuxtConfig({
 
   i18n: {
     defaultLocale: 'uz',
+    lazy: true,
+    langDir: 'locales', // Fayllar qayerda joylashganini ko'rsatadi
     locales: [
       { code: 'uz', language: 'uz-UZ', name: "O'zbekcha", file: 'uz.json' },
       { code: 'ru', language: 'ru-RU', name: 'Русский', file: 'ru.json' },
       { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
     ],
+    bundle: {
+      optimizeTranslationDirective: false, // Logdagi ogohlantirishni o'chiradi va to'g'ri parse qiladi
+    },
     strategy: 'prefix_except_default',
     detectBrowserLanguage: {
       useCookie: true,
