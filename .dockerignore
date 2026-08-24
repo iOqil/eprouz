@@ -39,6 +39,9 @@ LICENSE
 *.md
 !content/**/*.md
 
+# Headless WordPress backend (separate deployment, not part of the Nuxt image)
+wordpress/
+
 # Misc
 .fleet
 .eslintcache

@@ -6,7 +6,7 @@ Marketing website for [EPRO](https://epro.uz) — a multi-tenant SaaS management
 
 - **Nuxt 4** — framework
 - **@nuxt/ui v4** — components (Tailwind CSS v4)
-- **@nuxt/content v3** — markdown blog
+- **Headless WordPress** (WPGraphQL) — blog & CMS content (see [`wordpress/`](wordpress/README.md))
 - **@nuxtjs/i18n** — uz/ru/en localization
 - **@nuxtjs/seo** — sitemap, OG, robots, schema.org
 - **@nuxt/image** — responsive image optimization
@@ -46,22 +46,17 @@ pnpm preview
 
 ## Adding a blog post
 
-Create `content/blog/<slug>.md`:
+Blog content is managed in **headless WordPress** (no longer markdown). Create a
+post in the WordPress admin (`cms.epro.uz`), set its language (Polylang) and the
+`Reading time` ACF field, and publish. It appears on the site within seconds via
+the `/api/revalidate` webhook — no rebuild required.
 
-```markdown
----
-title: "Post title"
-description: "Short description for SEO"
-date: 2026-06-01
-locale: uz
-readTime: 5
-tags: [news, product]
----
+For Russian/English versions, use Polylang to create the translations of the post.
 
-Content in markdown...
-```
-
-For Russian/English versions, create `content/blog/<slug>.ru.md` etc. with `locale: ru` in frontmatter.
+The Nuxt side fetches posts over WPGraphQL through cached server routes
+(`server/api/cms/*`, `server/utils/wp-*`) and renders them SSR + SWR. See
+[`wordpress/README.md`](wordpress/README.md) for the full CMS setup (plugins,
+ACF fields, languages, webhook).
 
 ## Environment variables
 
@@ -73,6 +68,8 @@ See `.env.example`:
 | `NUXT_PUBLIC_API_BASE` | `https://api.epro.uz` | Laravel API for lead form |
 | `NUXT_PUBLIC_ADMIN_URL` | `https://admin.epro.uz` | Sign-in redirect |
 | `NUXT_PUBLIC_TELEGRAM_BOT` | `EproSupportBot` | Telegram support bot username |
+| `NUXT_WP_GRAPHQL_ENDPOINT` | `https://cms.epro.uz/graphql` | Headless WordPress WPGraphQL endpoint (server-only) |
+| `NUXT_WP_REVALIDATE_SECRET` | — | Shared secret for the WP publish webhook → `/api/revalidate` (server-only) |
 
 ## Deployment
 

@@ -1,0 +1,81 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "48rem",
+			"wideSize": "80rem"
+		},
+		"color": {
+			"defaultPalette": false,
+			"custom": true,
+			"palette": [
+				{ "slug": "white", "name": "White", "color": "#ffffff" },
+				{ "slug": "black", "name": "Black", "color": "#020617" },
+				{ "slug": "primary-50", "name": "Primary 50", "color": "#eef2ff" },
+				{ "slug": "primary-100", "name": "Primary 100", "color": "#e0e7ff" },
+				{ "slug": "primary-200", "name": "Primary 200", "color": "#c7d2fe" },
+				{ "slug": "primary-300", "name": "Primary 300", "color": "#a5b4fc" },
+				{ "slug": "primary-400", "name": "Primary 400", "color": "#818cf8" },
+				{ "slug": "primary-500", "name": "Primary 500", "color": "#6366f1" },
+				{ "slug": "primary-600", "name": "Primary 600", "color": "#4f46e5" },
+				{ "slug": "primary-700", "name": "Primary 700", "color": "#4338ca" },
+				{ "slug": "primary-800", "name": "Primary 800", "color": "#3730a3" },
+				{ "slug": "primary-900", "name": "Primary 900", "color": "#312e81" },
+				{ "slug": "primary-950", "name": "Primary 950", "color": "#1e1b4b" },
+				{ "slug": "neutral-50", "name": "Neutral 50", "color": "#f8fafc" },
+				{ "slug": "neutral-100", "name": "Neutral 100", "color": "#f1f5f9" },
+				{ "slug": "neutral-200", "name": "Neutral 200", "color": "#e2e8f0" },
+				{ "slug": "neutral-300", "name": "Neutral 300", "color": "#cbd5e1" },
+				{ "slug": "neutral-400", "name": "Neutral 400", "color": "#94a3b8" },
+				{ "slug": "neutral-500", "name": "Neutral 500", "color": "#64748b" },
+				{ "slug": "neutral-600", "name": "Neutral 600", "color": "#475569" },
+				{ "slug": "neutral-700", "name": "Neutral 700", "color": "#334155" },
+				{ "slug": "neutral-800", "name": "Neutral 800", "color": "#1e293b" },
+				{ "slug": "neutral-900", "name": "Neutral 900", "color": "#0f172a" },
+				{ "slug": "neutral-950", "name": "Neutral 950", "color": "#020617" }
+			]
+		},
+		"typography": {
+			"fluid": true,
+			"customFontSize": true,
+			"fontFamilies": [
+				{ "fontFamily": "Inter, ui-sans-serif, system-ui, sans-serif", "slug": "sans", "name": "Inter" },
+				{ "fontFamily": "Manrope, Inter, ui-sans-serif, system-ui, sans-serif", "slug": "display", "name": "Manrope" }
+			],
+			"fontSizes": [
+				{ "slug": "sm", "name": "Small", "size": "0.875rem" },
+				{ "slug": "base", "name": "Base", "size": "1rem" },
+				{ "slug": "lg", "name": "Large", "size": "1.125rem" },
+				{ "slug": "xl", "name": "XL", "size": "1.25rem" },
+				{ "slug": "2xl", "name": "2XL", "size": "1.5rem" },
+				{ "slug": "3xl", "name": "3XL", "size": "1.875rem" }
+			],
+			"lineHeight": true
+		},
+		"spacing": {
+			"units": [ "px", "em", "rem", "vh", "vw", "%" ],
+			"blockGap": true,
+			"margin": true,
+			"padding": true
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--sans)"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--display)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--primary-600)"
+				}
+			}
+		}
+	}
+}

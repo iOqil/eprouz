@@ -6,12 +6,11 @@ useSeoMeta({
   description: () => t('seo.blog.description'),
 })
 
-const { data: posts } = await useAsyncData('blog-list', () =>
-  queryCollection('blog')
-    .where('locale', '=', locale.value)
-    .order('date', 'DESC')
-    .all(),
-)
+// Sourced from headless WordPress (server route proxies + caches WPGraphQL).
+// Resilient: an empty list renders the empty state, never a crash.
+const { data: posts } = await useFetch('/api/cms/posts', {
+  query: { lang: locale },
+})
 
 const localePath = useLocalePath()
 
@@ -36,22 +35,22 @@ const formatDate = (d: string) =>
       <div v-if="posts && posts.length" class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <article
           v-for="post in posts"
-          :key="post.path"
+          :key="post.slug"
           class="group"
         >
-          <NuxtLink :to="localePath(post.path)" class="block">
+          <NuxtLink :to="localePath('/blog/' + post.slug)" class="block">
             <div class="aspect-video rounded-xl bg-gradient-to-br from-primary-100 to-purple-100 dark:from-primary-950 dark:to-purple-950 overflow-hidden">
               <NuxtImg
                 v-if="post.cover"
-                :src="post.cover"
-                :alt="post.title"
+                :src="post.cover!"
+                :alt="post.coverAlt || post.title"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform"
                 loading="lazy"
               />
             </div>
             <div class="mt-4">
               <div class="flex items-center gap-2 text-xs text-neutral-500">
-                <span>{{ formatDate(post.date as string) }}</span>
+                <span>{{ formatDate(post.date) }}</span>
                 <span v-if="post.readTime">• {{ post.readTime }} {{ t('blogPage.minRead') }}</span>
               </div>
               <h2 class="mt-2 font-display text-xl font-bold text-neutral-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">

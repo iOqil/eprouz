@@ -10,6 +10,11 @@ dist
 node_modules
 *.tsbuildinfo
 
+# Other package managers' lockfiles (we use pnpm)
+package-lock.json
+yarn.lock
+bun.lockb
+
 # Logs
 logs
 *.log

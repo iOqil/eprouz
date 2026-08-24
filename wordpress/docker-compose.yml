@@ -1,0 +1,57 @@
+# Headless WordPress (CMS backend) for epro.uz
+# Deploy this as a "Docker Compose" resource on Coolify, domain: cms.epro.uz
+# (internal container port 80). This instance only serves WPGraphQL + wp-admin;
+# the public site is the separate Nuxt app at epro.uz.
+#
+# Set these as Coolify environment variables (never commit real secrets):
+#   WORDPRESS_DB_PASSWORD   — app DB user password
+#   MARIADB_ROOT_PASSWORD   — DB root password
+#   NUXT_REVALIDATE_SECRET  — same value as the Nuxt app's WP_REVALIDATE_SECRET
+#
+# See README.md in this folder for plugin + ACF + Polylang + webhook setup.
+
+services:
+  db:
+    image: mariadb:11
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: ${WORDPRESS_DB_NAME:-wordpress}
+      MARIADB_USER: ${WORDPRESS_DB_USER:-wordpress}
+      MARIADB_PASSWORD: ${WORDPRESS_DB_PASSWORD:?set WORDPRESS_DB_PASSWORD in Coolify}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:?set MARIADB_ROOT_PASSWORD in Coolify}
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ['CMD', 'healthcheck.sh', '--connect', '--innodb_initialized']
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+  wordpress:
+    image: wordpress:php8.3-apache
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME:-wordpress}
+      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER:-wordpress}
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD:?set WORDPRESS_DB_PASSWORD in Coolify}
+      # Pass the revalidate secret to PHP (used by the publish webhook, see README)
+      NUXT_REVALIDATE_SECRET: ${NUXT_REVALIDATE_SECRET:-change-me}
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_MEMORY_LIMIT', '256M');
+        /* Behind Coolify's TLS-terminating proxy: trust the forwarded protocol */
+        if (isset($$_SERVER['HTTP_X_FORWARDED_PROTO']) && $$_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+          $$_SERVER['HTTPS'] = 'on';
+        }
+    volumes:
+      - wp_data:/var/www/html
+    # For local testing only; on Coolify set the FQDN (cms.epro.uz) -> port 80.
+    ports:
+      - '8080:80'
+
+volumes:
+  db_data:
+  wp_data:

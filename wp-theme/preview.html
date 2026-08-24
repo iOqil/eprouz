@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EPRO — WordPress theme preview</title>
+	<!--
+		Static preview of the EPRO WordPress theme design. Open this file in a
+		browser to eyeball the result without installing WordPress. The real theme
+		(classic PHP + full Customizer support) lives in ./epro-classic.
+	-->
+	<script>
+		(function () {
+			try {
+				var s = localStorage.getItem('epro-theme');
+				var dark = s ? s === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+				document.documentElement.classList.toggle('dark', dark);
+			} catch (e) {}
+		})();
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+	<script>
+		tailwind.config = {
+			darkMode: 'class',
+			theme: { extend: {
+				colors: {
+					primary: { 50:'#eef2ff',100:'#e0e7ff',200:'#c7d2fe',300:'#a5b4fc',400:'#818cf8',500:'#6366f1',600:'#4f46e5',700:'#4338ca',800:'#3730a3',900:'#312e81',950:'#1e1b4b' },
+					neutral: { 50:'#f8fafc',100:'#f1f5f9',200:'#e2e8f0',300:'#cbd5e1',400:'#94a3b8',500:'#64748b',600:'#475569',700:'#334155',800:'#1e293b',900:'#0f172a',950:'#020617' }
+				},
+				fontFamily: {
+					sans: ['Inter','ui-sans-serif','system-ui','sans-serif'],
+					display: ['Manrope','Inter','ui-sans-serif','system-ui','sans-serif'],
+				},
+			} },
+		};
+	</script>
+	<style type="text/tailwindcss">
+		@layer components {
+			.btn { @apply inline-flex items-center justify-center gap-2 rounded-md font-medium transition-colors; }
+			.btn-sm { @apply px-3 py-1.5 text-sm; }
+			.btn-lg { @apply px-4 py-2.5 text-base; }
+			.btn-xl { @apply px-5 py-3 text-base; }
+			.btn-primary { @apply bg-primary-500 text-white hover:bg-primary-600; }
+			.btn-ghost { @apply text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800; }
+			.btn-outline { @apply border border-neutral-300 dark:border-neutral-700 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-neutral-900; }
+			.badge-soft { @apply inline-flex items-center rounded-full bg-primary-50 dark:bg-primary-950 text-primary-700 dark:text-primary-300 px-3 py-1 text-sm font-medium; }
+		}
+	</style>
+</head>
+<body class="min-h-screen flex flex-col bg-white dark:bg-neutral-950 font-sans text-neutral-900 dark:text-white antialiased">
+
+	<!-- Header -->
+	<header class="sticky top-0 z-40 w-full border-b border-neutral-200/60 dark:border-neutral-800/60 bg-white/80 dark:bg-neutral-950/80 backdrop-blur">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+			<a href="#" class="flex items-center gap-2 font-display font-bold text-xl">
+				<span class="size-8 rounded-lg bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center text-white">E</span>
+				<span>EPRO</span>
+			</a>
+			<nav class="hidden md:flex items-center gap-6 text-sm text-neutral-700 dark:text-neutral-300">
+				<a href="#features" class="hover:text-primary-600 dark:hover:text-primary-400">Imkoniyatlar</a>
+				<a href="#pricing" class="hover:text-primary-600 dark:hover:text-primary-400">Tariflar</a>
+				<a href="#" class="hover:text-primary-600 dark:hover:text-primary-400">Xavfsizlik</a>
+				<a href="#" class="hover:text-primary-600 dark:hover:text-primary-400">Blog</a>
+				<a href="#cta" class="hover:text-primary-600 dark:hover:text-primary-400">Bog'lanish</a>
+			</nav>
+			<div class="flex items-center gap-2">
+				<button class="btn btn-ghost btn-sm !px-2" onclick="document.documentElement.classList.toggle('dark'); try{localStorage.setItem('epro-theme', document.documentElement.classList.contains('dark')?'dark':'light')}catch(e){}" aria-label="Toggle theme">
+					<svg class="hidden dark:block size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+					<svg class="block dark:hidden size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+				</button>
+				<a href="#" class="btn btn-ghost btn-sm hidden sm:inline-flex">Kirish</a>
+				<a href="#cta" class="btn btn-primary btn-sm hidden sm:inline-flex">Boshlash</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="flex-1">
+		<!-- Hero -->
+		<section class="relative overflow-hidden">
+			<div class="absolute inset-0 -z-10" aria-hidden="true">
+				<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary-500/10 rounded-full blur-3xl"></div>
+				<div class="absolute bottom-0 right-0 w-[600px] h-[600px] bg-purple-500/5 rounded-full blur-3xl"></div>
+			</div>
+			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-24 sm:pt-28 sm:pb-32">
+				<div class="text-center max-w-4xl mx-auto">
+					<span class="badge-soft mb-6"><span class="size-2 rounded-full bg-primary-500 animate-pulse mr-2"></span>O'quv markazlar uchun #1 SaaS</span>
+					<h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">O'quv markaz boshqaruvi <span class="bg-gradient-to-r from-primary-500 to-purple-500 bg-clip-text text-transparent">yanada osonroq</span></h1>
+					<p class="mt-6 text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto leading-relaxed">EPRO — multi-tenant SaaS platforma. O'quvchi, o'qituvchi, kurs, davomat, baholash, kassa va real-time chat — bir joyda.</p>
+					<div class="mt-10 flex flex-col sm:flex-row gap-3 justify-center">
+						<a href="#cta" class="btn btn-primary btn-xl">14 kunlik bepul sinov
+							<svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+						</a>
+						<a href="#features" class="btn btn-outline btn-xl">Imkoniyatlar haqida</a>
+					</div>
+					<p class="mt-6 text-sm text-neutral-500">Kreditka kerak emas • 5 daqiqada o'rnatish</p>
+				</div>
+				<div class="mt-16 grid grid-cols-3 gap-4 sm:gap-8 max-w-3xl mx-auto">
+					<div class="text-center"><div class="text-3xl sm:text-4xl font-display font-bold text-primary-600 dark:text-primary-400">23+</div><div class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Modul</div></div>
+					<div class="text-center"><div class="text-3xl sm:text-4xl font-display font-bold text-primary-600 dark:text-primary-400">99.9%</div><div class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Uptime SLA</div></div>
+					<div class="text-center"><div class="text-3xl sm:text-4xl font-display font-bold text-primary-600 dark:text-primary-400">&lt; 1s</div><div class="mt-1 text-sm text-neutral-600 dark:text-neutral-400">Sahifa yuklash</div></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Logos -->
+		<section class="py-12 border-y border-neutral-200 dark:border-neutral-800 bg-neutral-50/50 dark:bg-neutral-900/20">
+			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<p class="text-center text-sm font-medium text-neutral-500 uppercase tracking-wider">Bizga ishongan markazlar</p>
+				<div class="mt-8 grid grid-cols-3 sm:grid-cols-6 gap-6 items-center opacity-70">
+					<div class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 hover:opacity-100 transition-all"><div class="size-12 rounded-lg bg-neutral-300 dark:bg-neutral-800 flex items-center justify-center text-neutral-600 dark:text-neutral-400 font-bold">S1</div><span class="text-xs text-neutral-500">School 1</span></div>
+					<div class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 hover:opacity-100 transition-all"><div class="size-12 rounded-lg bg-neutral-300 dark:bg-neutral-800 flex items-center justify-center text-neutral-600 dark:text-neutral-400 font-bold">EC</div><span class="text-xs text-neutral-500">EduCenter</span></div>
+					<div class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 hover:opacity-100 transition-all"><div class="size-12 rounded-lg bg-neutral-300 dark:bg-neutral-800 flex items-center justify-center text-neutral-600 dark:text-neutral-400 font-bold">B</div><span class="text-xs text-neutral-500">Bilim</span></div>
+					<div class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 hover:opacity-100 transition-all"><div class="size-12 rounded-lg bg-neutral-300 dark:bg-neutral-800 flex items-center justify-center text-neutral-600 dark:text-neutral-400 font-bold">M+</div><span class="text-xs text-neutral-500">Maktab+</span></div>
+					<div class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 hover:opacity-100 transition-all"><div class="size-12 rounded-lg bg-neutral-300 dark:bg-neutral-800 flex items-center justify-center text-neutral-600 dark:text-neutral-400 font-bold">TA</div><span class="text-xs text-neutral-500">TechAcademy</span></div>
+					<div class="flex flex-col items-center gap-2 grayscale hover:grayscale-0 hover:opacity-100 transition-all"><div class="size-12 rounded-lg bg-neutral-300 dark:bg-neutral-800 flex items-center justify-center text-neutral-600 dark:text-neutral-400 font-bold">LP</div><span class="text-xs text-neutral-500">LangPro</span></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features -->
+		<section id="features" class="py-20 sm:py-28 bg-neutral-50/50 dark:bg-neutral-900/30 border-y border-neutral-200 dark:border-neutral-800 scroll-mt-16">
+			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<div class="text-center max-w-2xl mx-auto mb-16">
+					<h2 class="font-display text-3xl sm:text-4xl font-bold">Bitta platforma — hammasi ichida</h2>
+					<p class="mt-4 text-lg text-neutral-600 dark:text-neutral-400">O'quv markaz uchun zarur barcha modullar. Excel'lardan, qog'ozlardan va alohida tizimlardan voz keching.</p>
+				</div>
+				<div id="features-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+			</div>
+		</section>
+
+		<!-- Pricing -->
+		<section id="pricing" class="py-20 sm:py-28 scroll-mt-16">
+			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<div class="text-center max-w-2xl mx-auto mb-12">
+					<h2 class="font-display text-3xl sm:text-4xl font-bold">Tariflar — shaffof va adolatli</h2>
+					<p class="mt-4 text-lg text-neutral-600 dark:text-neutral-400">Kichik markaz uchun ham, katta tarmoq uchun ham. To'lov sizning o'sishingiz bilan.</p>
+					<div class="mt-8 inline-flex rounded-full bg-neutral-100 dark:bg-neutral-900 p-1" id="billing">
+						<button data-billing="monthly" class="px-4 py-1.5 text-sm font-medium rounded-full transition-colors">Oylik</button>
+						<button data-billing="yearly" class="px-4 py-1.5 text-sm font-medium rounded-full transition-colors text-neutral-600 dark:text-neutral-400">Yillik • 2 oy bepul</button>
+					</div>
+				</div>
+				<div id="pricing-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto"></div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section id="cta" class="py-20 sm:py-24 scroll-mt-16">
+			<div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+				<div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary-600 via-primary-700 to-purple-700 p-8 sm:p-16 text-center">
+					<div class="absolute -top-24 -right-24 size-64 bg-white/10 rounded-full blur-3xl"></div>
+					<div class="absolute -bottom-24 -left-24 size-64 bg-white/5 rounded-full blur-3xl"></div>
+					<div class="relative">
+						<h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Bugun boshlasangiz, ertaga farqni ko'rasiz</h2>
+						<p class="mt-4 text-lg text-primary-100 max-w-2xl mx-auto">14 kun bepul sinov. Kreditka kerak emas. Istalgan paytda bekor qilish mumkin.</p>
+						<div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+							<a href="#" class="btn btn-xl bg-white text-primary-700 hover:bg-neutral-100">Bepul sinov boshlash</a>
+							<a href="#pricing" class="btn btn-xl text-white hover:bg-white/10">Tariflarni ko'rish</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="border-t border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-950">
+		<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+			<div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+				<div class="col-span-2">
+					<a href="#" class="flex items-center gap-2 font-display font-bold text-xl"><span class="size-8 rounded-lg bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center text-white">E</span><span>EPRO</span></a>
+					<p class="mt-4 text-sm text-neutral-600 dark:text-neutral-400 max-w-sm">O'quv markazlar uchun zamonaviy boshqaruv tizimi. Toshkentda 2026'da yaratildi.</p>
+				</div>
+				<div><h3 class="text-sm font-semibold uppercase tracking-wide">Mahsulot</h3><ul class="mt-4 space-y-3 text-sm text-neutral-600 dark:text-neutral-400"><li><a href="#features" class="hover:text-primary-600">Imkoniyatlar</a></li><li><a href="#pricing" class="hover:text-primary-600">Tariflar</a></li><li><a href="#" class="hover:text-primary-600">Xavfsizlik</a></li></ul></div>
+				<div><h3 class="text-sm font-semibold uppercase tracking-wide">Kompaniya</h3><ul class="mt-4 space-y-3 text-sm text-neutral-600 dark:text-neutral-400"><li><a href="#" class="hover:text-primary-600">Biz haqimizda</a></li><li><a href="#" class="hover:text-primary-600">Blog</a></li><li><a href="#cta" class="hover:text-primary-600">Bog'lanish</a></li></ul></div>
+				<div><h3 class="text-sm font-semibold uppercase tracking-wide">Huquqiy</h3><ul class="mt-4 space-y-3 text-sm text-neutral-600 dark:text-neutral-400"><li><a href="#" class="hover:text-primary-600">Foydalanish shartlari</a></li><li><a href="#" class="hover:text-primary-600">Maxfiylik siyosati</a></li><li><a href="#" class="hover:text-primary-600">Cookies siyosati</a></li></ul></div>
+			</div>
+			<div class="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800 flex flex-col sm:flex-row justify-between items-center gap-4">
+				<p class="text-sm text-neutral-500">© 2026 EPRO. Barcha huquqlar himoyalangan.</p>
+				<p class="text-xs text-neutral-400 dark:text-neutral-600">O'zbekistonda yaratildi 🇺🇿</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		// Feature cards
+		var ICON = {
+			cap: '<path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>',
+			wallet: '<path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/>',
+			users: '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+			bar: '<path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/>',
+			msg: '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
+			bell: '<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>',
+			phone: '<rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/>',
+			shield: '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/>',
+			globe: '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>'
+		};
+		var FEATURES = [
+			['cap','LMS — kurs va dars',"Kurslar, modullar, darslar, vazifalar, testlar, video, materiallar — bir joyda."],
+			['wallet',"Kassa va to'lovlar","To'lov qabul, qarz boshqaruvi, salarinda hisobot. Click va Payme integratsiyasi tayyor."],
+			['users','Multi-tenant arxitektura',"Har bir maktab o'z ma'lumotlar bazasi va subdomain'iga ega. To'liq izolyatsiya, GDPR."],
+			['bar','Real-time hisobotlar',"O'qituvchi samaradorligi, kurs aktivligi, to'lov tahlili. Dashboard live yangilanadi."],
+			['msg','Real-time chat',"Guruh ichi muloqot, ota-ona xabarnomalari, file sharing. WebSocket asosida."],
+			['bell','Telegram bot',"Davomat, baho, to'lov haqida ota-onaga avtomatik xabar. Bot orqali so'rov ham."],
+			['phone','Mobile PWA',"Android/iOS native ilova kerak emas. Web app, lekin ilova tajribasi."],
+			['shield','Korporativ xavfsizlik',"2FA, audit log, RBAC, har kunlik backuplar, GDPR/Cookie Compliance."],
+			['globe',"Ko'p tilli","O'zbek, rus, ingliz, qoraqalpoq. Mijozlaringiz qaysi tilda gapirsa — shu tilda."]
+		];
+		document.getElementById('features-grid').innerHTML = FEATURES.map(function (f) {
+			return '<div class="group p-6 rounded-xl bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 hover:border-primary-300 dark:hover:border-primary-700 hover:shadow-lg transition-all">' +
+				'<div class="size-12 rounded-lg bg-primary-100 dark:bg-primary-950 flex items-center justify-center text-primary-600 dark:text-primary-400 group-hover:scale-110 transition-transform">' +
+				'<svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' + ICON[f[0]] + '</svg></div>' +
+				'<h3 class="mt-4 font-display font-semibold text-lg">' + f[1] + '</h3>' +
+				'<p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">' + f[2] + '</p></div>';
+		}).join('');
+
+		// Pricing
+		var CHECK = '<svg class="size-5 text-primary-600 dark:text-primary-400 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+		var PLANS = [
+			{name:'Starter',desc:"Kichik markaz, 100 gacha o'quvchi",m:290000,y:2900000,featured:false,cta:'14 kunlik sinov',f:["100 ta o'quvchi","5 ta o'qituvchi",'LMS + Kassa + Davomat','Telegram bot','Email yordam']},
+			{name:'Pro',desc:"O'rta markaz, 500 gacha o'quvchi",m:690000,y:6900000,featured:true,cta:'14 kunlik sinov',f:["500 ta o'quvchi","30 ta o'qituvchi",'Barcha modullar (chat, gamification)','Real-time hisobotlar','Custom branding','Priority Telegram + telefon yordam']},
+			{name:'Enterprise',desc:'Katta tarmoq yoki maxsus talab',m:null,y:null,featured:false,cta:"Sotuv bilan bog'lanish",f:["Cheklanmagan o'quvchi","Cheklanmagan o'qituvchi",'Maxsus integratsiya','SLA va alohida server','Dedicated account manager']}
+		];
+		var fmt = function (n) { return new Intl.NumberFormat('uz-UZ').format(n); };
+		var mode = 'monthly';
+		function renderPlans() {
+			document.getElementById('pricing-grid').innerHTML = PLANS.map(function (p) {
+				var priceBlock;
+				if (p.m === null) {
+					priceBlock = '<div class="text-3xl font-display font-bold">Maxsus</div><p class="text-sm text-neutral-500 mt-1">Talab asosida narx</p>';
+				} else {
+					var val = mode === 'monthly' ? p.m : Math.round(p.y / 12);
+					priceBlock = '<div class="flex items-baseline gap-1"><span class="text-4xl font-display font-bold">' + fmt(val) + '</span><span class="text-sm text-neutral-500">so\'m/oy</span></div>' +
+						(mode === 'yearly' ? '<p class="text-xs text-primary-600 dark:text-primary-400 mt-1">Yiliga ' + fmt(p.y) + ' so\'m — 2 oy bepul</p>' : '');
+				}
+				return '<div class="relative rounded-2xl p-8 flex flex-col ' + (p.featured ? 'bg-gradient-to-b from-primary-50 to-white dark:from-primary-950/50 dark:to-neutral-950 border-2 border-primary-500 shadow-xl shadow-primary-500/10' : 'bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800') + '">' +
+					(p.featured ? '<span class="absolute -top-3 left-1/2 -translate-x-1/2 inline-flex items-center rounded-full bg-primary-500 text-white px-3 py-0.5 text-xs font-semibold">ENG MASHHUR</span>' : '') +
+					'<h3 class="font-display text-2xl font-bold">' + p.name + '</h3>' +
+					'<p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">' + p.desc + '</p>' +
+					'<div class="mt-6">' + priceBlock + '</div>' +
+					'<ul class="mt-8 space-y-3 flex-1">' + p.f.map(function (x) { return '<li class="flex items-start gap-3 text-sm text-neutral-700 dark:text-neutral-300">' + CHECK + '<span>' + x + '</span></li>'; }).join('') + '</ul>' +
+					'<a href="#cta" class="btn btn-lg w-full mt-8 ' + (p.featured ? 'btn-primary' : 'btn-outline') + '">' + p.cta + '</a></div>';
+			}).join('');
+		}
+		renderPlans();
+		document.querySelectorAll('#billing button').forEach(function (b) {
+			b.addEventListener('click', function () {
+				mode = b.getAttribute('data-billing');
+				document.querySelectorAll('#billing button').forEach(function (x) {
+					var active = x.getAttribute('data-billing') === mode;
+					x.classList.toggle('bg-white', active);
+					x.classList.toggle('dark:bg-neutral-800', active);
+					x.classList.toggle('shadow', active);
+					x.classList.toggle('text-neutral-600', !active);
+					x.classList.toggle('dark:text-neutral-400', !active);
+				});
+				renderPlans();
+			});
+		});
+		document.querySelector('#billing button[data-billing="monthly"]').click();
+	</script>
+</body>
+</html>

@@ -15,7 +15,7 @@ const nav = computed(() => [
 ])
 
 const localeItems = computed(() =>
-  (locales.value as Array<{ code: string; name: string }>).map(l => ({
+  (locales.value as Array<{ code: 'uz' | 'ru' | 'en'; name: string }>).map(l => ({
     label: l.name,
     onSelect: () => setLocale(l.code),
     active: l.code === locale.value,
